@@ -5,13 +5,13 @@ Halaman Data Table
 @endsection
 
 @push('styling')
-<link href="{{ asset('/templateAdmin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+<link href="{{ asset('/template/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 @endpush
 
 @push('scripts')
 
-<script src="{{ asset('/templateAdmin/plugins/datatables/jquery.dataTables.js') }}"></script>
-<script src="{{ asset('/templateAdmin/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
+<script src="{{ asset('/template/plugins/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('/template/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
 <script>
   $(function () {
     $("#example1").DataTable();
