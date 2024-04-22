@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CastController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,5 @@ Route::post('/welcome',[DashboardController::class,'store']);
 
 Route::get('/table',fn()=>view('pages.user-table'));
 Route::get('/data-tables',fn() => view('pages.data-table'));
+
+Route::resource('/cast',CastController::class);
